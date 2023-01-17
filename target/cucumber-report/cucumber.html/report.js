@@ -1,0 +1,81 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("jobserch.feature");
+formatter.feature({
+  "line": 1,
+  "name": "HeartBingo Login",
+  "description": "",
+  "id": "heartbingo-login",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "As a User I should navigate to login page",
+  "description": "",
+  "id": "heartbingo-login;as-a-user-i-should-navigate-to-login-page",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am on homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 5,
+      "value": "#    When I click on accept all cookies on pop up"
+    }
+  ],
+  "line": 6,
+  "name": "I click on Login Link",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I should navigate on login page successfully",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "I verify that user is on login page \"Log In to start playing.\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LoginSteps.iAmOnHomepage()"
+});
+formatter.result({
+  "duration": 194432500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.iClickOnLoginLink()"
+});
+formatter.result({
+  "duration": 94387000,
+  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat com.verginGames.utility.Utility.clickOnElement(Utility.java:51)\r\n\tat com.verginGames.pages.LoginPage.clickOnLoginLink(LoginPage.java:41)\r\n\tat com.verginGames.steps.LoginSteps.iClickOnLoginLink(LoginSteps.java:24)\r\n\tat ✽.When I click on Login Link(jobserch.feature:6)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "LoginSteps.iNavigateOnLoginPage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Log In to start playing.",
+      "offset": 37
+    }
+  ],
+  "location": "LoginSteps.iVerifyThatUserIsOnLoginPage(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 2963600,
+  "error_message": "java.lang.NullPointerException\r\n\tat com.verginGames.utility.Utility.getScreenshot(Utility.java:333)\r\n\tat com.verginGames.Hooks.tearDown(Hooks.java:24)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:160)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+  "status": "failed"
+});
+});
